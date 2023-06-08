@@ -85,11 +85,19 @@ The code handles errors and provides appropriate error messages if invalid input
 
 1-) select encryption or decryption
 ![1](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/1.png?raw=true)
+
 2-) enter the text you want to encrypt, the value of the public key 'e', and the value of 'n'.
+
 ![2](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/2.png?raw=true)
-3-)
+
+3-)The program returns the encrypted text to you as an array.
+
 ![3](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/3.png?raw=true)
-4-)
+
+4-)To decrypt the encrypted text, choose the decryption option and enter the text you want to decrypt along with the values of the private key 'd' and 'n'.
+
 ![4](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/4.png?raw=true)
-5-)
+
+5-)The program returns the decrypted text to you.
+
 ![5](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/5.png?raw=true)
