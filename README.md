@@ -83,4 +83,13 @@ For decryption:
 
 The code handles errors and provides appropriate error messages if invalid input is entered. Users can follow the prompts, input the required information, and obtain the encrypted or decrypted results based on their selection.
 
+1-) select encryption or decryption
 ![1](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/1.png?raw=true)
+2-) enter the text you want to encrypt, the value of the public key 'e', and the value of 'n'.
+![2](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/2.png?raw=true)
+3-)
+![3](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/3.png?raw=true)
+4-)
+![4](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/4.png?raw=true)
+5-)
+![5](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/5.png?raw=true)
