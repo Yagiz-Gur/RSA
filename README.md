@@ -4,6 +4,7 @@
 - [Generating Key](#generating-key)
 - [simple-rsa.py](#simple-rsa.py)
 - [key-generator.py](#key-generator.py)
+- [rsa-gui.py](#rsa-gui.py)
  
 
 
@@ -129,3 +130,51 @@ People can use this code as a starting point to generate their own RSA key pairs
 ![2](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/key%20generator/2.png?raw=true)
 
 
+# <a id="rsa-gui.py">rsa-gui.py <a/>
+
+The rsa-gui.py is a PyQt5 application for performing RSA encryption and decryption. It provides a graphical user interface (GUI).
+
+Note: 1.  Make sure you have PyQt5 installed. If not, you can install it using pip: `pip install pyqt5`.
+
+The main functionalities of the application are as follows:
+1.  **The GUI window will appear on your screen. It consists of several elements:**
+    
+    -   *Input text field:* This is where you can enter the text you want to encrypt.
+    -   *Output text field:* This is where the encrypted or decrypted text will be displayed.
+    -   *Encrypt button:* Clicking this button will encrypt the input text using the RSA algorithm.
+    -   *Decrypt button:* Clicking this button will decrypt the input text using the RSA algorithm.
+    -   *Public Key and Private Key input fields:* These are where you should enter the public and private keys, respectively. The keys should be in the format `e,n` or `d,n`, where `e` and `d` are the exponent values and `n` is the modulus value.
+2.  **To encrypt a text:**
+    
+    -   Enter the text you want to encrypt in the Input text field.
+    -   Enter the appropriate public key in the Public Key input field.
+    -   Click the Encrypt button.
+    -   The encrypted text will be displayed in the Output text field.
+3.  **To decrypt a text:**
+    
+    -   Enter the encrypted text in the Input text field.
+    -   Enter the appropriate private key in the Private Key input field.
+    -   Click the Decrypt button.
+    -   The decrypted text will be displayed in the Output text field.
+
+
+The encryption process converts the input text into ASCII values, raises each ASCII value to the power of the public key exponent (e), and takes the modulus of the result with the public key modulus (n). 
+The decryption process raises each encrypted value to the power of the private key exponent (d) and takes the modulus of the result with the private key modulus (n). The decrypted ASCII values are then converted back to text.
+
+1-) When you first open the application, you will be presented with a window similar to the following:
+![1](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/gui/1.png?raw=true)
+
+2-) enter the values for the public and private keys. First, enter the value for 'e' or 'd', and then enter the value for 'n'. (e=17 , n=3233/ d=413, n=3233)
+
+![2](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/gui/2.png?raw=true)
+
+3-) enter the text you want to encrypt or decrypt in the Input section. Then, depending on the operation you want to perform, click either the "Encrypt" or "Decrypt" button. (In this example, I will be using the encryption operation.)
+![3](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/gui/3.png?raw=true)
+
+4-)The encrypted message will be provided in the program's output section.
+
+![4](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/gui/4.png?raw=true)
+
+5-)You can perform the same steps for the decryption operation.
+
+![5](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/gui/5.png?raw=true)
