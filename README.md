@@ -1,8 +1,9 @@
 # Table of contents
 - [What  is RSA?](#what-is-rsa)
-- [How does RSA work?](#How-does-RSA-work)
-- [Generating Key](#Generating-Key)
+- [How does RSA work?](#how-does-rsa-work)
+- [Generating Key](#generating-key)
 - [simple-rsa.py](#simple-rsa.py)
+- [key-generator.py](#key-generator.py)
  
 
 
@@ -27,7 +28,7 @@ As for its operation, the RSA algorithm consists of three steps:
 The RSA algorithm is used in various application areas such as secure communication, digital signatures, and authentication. It is a popular encryption algorithm, especially for ensuring data security on the internet.
 
 
-# <a id="How-does-RSA-work">How does RSA work? </a>
+# <a id="how-does-rsa-work">How does RSA work? </a>
 The RSA algorithm is based on the mathematical properties of prime numbers and modular arithmetic. Here is a brief explanation of the mathematical background of the RSA algorithm:
 
 - **Key Generation:**
@@ -52,7 +53,7 @@ The security of the RSA algorithm relies on the difficulty of factoring large co
 
 By using the proper key generation and securely exchanging public keys, the RSA algorithm provides a secure method for encryption and decryption.
 
-# <a id="Generating-Key"> Generating Key </a>
+# <a id="generating-key"> Generating Key </a>
 select two prime number (p and q). let p = 61 and q = 53, you can follow these steps:
 
 1.  Calculate the modulus, N: N = p * q = 61 * 53 = 3233.
