@@ -1,11 +1,13 @@
 # Table of contents
 - [What  is RSA?](#what-is-rsa)
 - [How does RSA work?](#How-does-RSA-work)
+- [Generating Key](#Generating-Key)
+- [simple-rsa.py](#simple-rsa.py)
  
 
 
 
-# <a name="what-is-rsa">What is RSA?</a> 
+# <a id="what-is-rsa">What is RSA?</a> 
 
 ![RSA](https://repository-images.githubusercontent.com/188075289/92938f00-a51d-11ea-95a4-a29ba772a729)
 
@@ -25,7 +27,7 @@ As for its operation, the RSA algorithm consists of three steps:
 The RSA algorithm is used in various application areas such as secure communication, digital signatures, and authentication. It is a popular encryption algorithm, especially for ensuring data security on the internet.
 
 
-# <a name="How-does-RSA-work">How does RSA work? </a>
+# <a id="How-does-RSA-work">How does RSA work? </a>
 The RSA algorithm is based on the mathematical properties of prime numbers and modular arithmetic. Here is a brief explanation of the mathematical background of the RSA algorithm:
 
 - **Key Generation:**
@@ -50,7 +52,7 @@ The security of the RSA algorithm relies on the difficulty of factoring large co
 
 By using the proper key generation and securely exchanging public keys, the RSA algorithm provides a secure method for encryption and decryption.
 
-# Generating Key
+# <a id="Generating-Key"> Generating Key </a>
 select two prime number (p and q). let p = 61 and q = 53, you can follow these steps:
 
 1.  Calculate the modulus, N: N = p * q = 61 * 53 = 3233.
@@ -68,7 +70,7 @@ select two prime number (p and q). let p = 61 and q = 53, you can follow these s
 
 Now you have the public key (3233, 17) and the private key (3233, 2753) for the given prime numbers p = 61 and q = 53. These keys can be used for encryption and decryption operations using the RSA algorithm.
 
-# `simple-rsa.py`
+# <a id="simple-rsa.py">simple-rsa.py</a>
 This code provides a basic command-line interface for encryption and decryption using the RSA algorithm. It allows the user to input text, choose between encryption or decryption, and provide the necessary keys. The program encrypts the text using the RSA algorithm and outputs the encrypted values, or decrypts the encrypted values back to text using the provided keys and displays the decrypted result.
 
 
@@ -108,3 +110,21 @@ The code handles errors and provides appropriate error messages if invalid input
 5-)The program returns the decrypted text to you.
 
 ![5](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/simple/5.png?raw=true)
+
+# <a id="key-generator.py">key-generator.py</a>
+
+The provided code is an implementation of the RSA (Rivest-Shamir-Adleman) algorithm, which is a widely used cryptographic algorithm for generating public and private keys.
+
+The code allows users to input two prime numbers (`p` and `q`). Using these prime numbers, the code generates a pair of public and private keys. The public key (`e` and `n`) can be shared with others to encrypt messages, while the private key (`d` and `n`) must be kept secret and is used for decrypting the encrypted messages.
+
+People can use this code as a starting point to generate their own RSA key pairs for various purposes, such as secure communication or data encryption. Once the keys are generated, the public key can be distributed to others who want to send encrypted messages to the owner of the private key. The owner can use the private key to decrypt those messages.
+
+1-)   Enter the prime numbers you want to use for key generation (p and q). Note: The larger the prime numbers you enter, the more difficult it will be to decrypt for those whom you do not want to read the message.
+
+![1](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/key%20generator/1.png?raw=true)
+
+2-) The program will output the private and public key values for you.
+
+![2](https://github.com/Yagiz-Gur/RSA/blob/main/screenshot/key%20generator/2.png?raw=true)
+
+
